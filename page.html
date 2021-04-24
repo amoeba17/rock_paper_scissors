@@ -46,16 +46,42 @@
                     }
                 }
 
-                if (result == 1) {
-                    return `You win! ${playerSelection} beats ${computerSelection}.`;
-                } else if (result == -1) {
-                    return `You lose! ${computerSelection} beats ${playerSelection}.`;
-                } else { // result == 0
-                    return "It's a tie!";
-                }
-
+                return result;
             }
-            console.log(playRound('Rock', computerPlay()));
-        </script>
+
+            function game() {
+                let playerScore = 0;
+                let computerScore = 0;
+                for (let i = 0; i < 5; i++) {
+                    let input;
+                    do {
+                        input = prompt('Rock/Paper/Scissors: ').toLowerCase();
+                    } while (input != 'rock' && input != 'scissors' && input != 'paper');
+
+                    let playerSelection = input;
+                    let computerSelection = computerPlay();
+                    let result = playRound(playerSelection, computerSelection);
+                    if (result == 1) {
+                        alert(`You win! ${playerSelection} beats ${computerSelection}.`);
+                        playerScore++;
+                        if (playerScore >= 3) {
+                            return 'You won the game!';
+                        }
+                    } else if (result == -1) {
+                        alert(`You lose! ${computerSelection} beats ${playerSelection}.`);
+                        computerScore++;
+                        if (computerScore >= 3) {
+                            return 'You lost the game :{';
+                        }
+                    } else { // result == 0
+                        alert("It's a tie!");
+                        i--;
+                    }
+                }
+                return 'unexpected return';
+            }
+
+            alert(game());
+            </script>
     </body>
 </html>
