@@ -1,0 +1,70 @@
+body {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+div#results {
+    width: 100%;
+    border: 1px solid black;
+    align-self: center;
+    vertical-align: middle;
+    display: flex;
+}
+
+div#scoreboard {
+    width: 50%;
+    border: 1px solid black;
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+div.selection-display {
+    width: 25%;
+    border: 1px solid black;
+    margin: 10%;
+    padding-top: 25%;
+}
+
+div#player-selection {
+    flex-grow: 1;
+}
+
+div#computer-selection {
+    flex-grow: 1;
+}
+
+div#dialogue {
+    width: 50%;
+    border: 1px solid black;
+    margin: 0 auto;
+    vertical-align: middle;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+div#buttons {
+    width: 100%;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+button {
+    width: 25%;
+    border: 1px solid black;
+    vertical-align: middle;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button:hover {
+    border: 2px solid black;
+}

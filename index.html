@@ -3,11 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <script src="script.js"></script>
-        <form onsubmit="alert(game())">
-            <input type="submit" value="Play">
-        </form>
+        <h1>Rock Paper Scissors</h1>
+        <div id="scoreboard">Score</div>
+        <div id="results">
+            <div id="player-selection" class="selection-display">Player</div>
+            <div id="computer-selection" class="selection-display">Computer</div>
+        </div>
+        <div id="dialogue">Dialogue</div>
+        <div id="buttons">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
     </body>
 </html>
