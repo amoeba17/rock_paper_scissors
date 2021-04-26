@@ -26,7 +26,8 @@ div.selection-display {
     height: 25%;
     border: 1px solid black;
     margin: 1%;
-    padding-top: 30%;
+    padding-bottom: 30%;
+    display: flex;
 }
 
 div#player-selection {
@@ -67,4 +68,11 @@ button {
 button:hover {
     border: 1px solid black;
     box-shadow: 1px 1px black;
+}
+
+img {
+    width: 100px;
+    position: fixed;
+    padding-top: 10%;
+    padding-left: 12%;
 }
